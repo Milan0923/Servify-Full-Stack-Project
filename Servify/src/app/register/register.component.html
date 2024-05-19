@@ -1,0 +1,25 @@
+<form [formGroup]="regform" (ngSubmit)="save()">
+    <br><br><br><br><br><br>
+    <div class='bold-line'></div>
+    <div class='container'>
+      <div class='window'>
+        <div class='overlay'></div>
+        <div class='content'>
+          <div class='welcome'>Servify Register!</div>
+          <div class='subtitle'>Helping, Hands Instantly</div>
+          <br>
+          <div class='input-fields'>
+            <input type='text' placeholder='Full Name' class='input-line full-width' formControlName="fullName" required><br>
+            <input type='email' placeholder='Email' class='input-line full-width' formControlName="email" required><br>
+            <input type='text' placeholder='Contact Number' class='input-line full-width' formControlName="contactNo" required><br>
+            <input type='password' placeholder='Password' class='input-line full-width' formControlName="password" required>
+          </div>
+          <br><br>
+          <div><button class='ghost-round full-width' type="submit">Create Account</button></div>
+          <!-- <div class='spacing'>Not registered? <a routerLink="/register"><span class='highlight'>Create an account</span></a></div> -->
+        </div>
+      </div>
+    </div>
+    <router-outlet/>
+    <br><br>
+  </form>

@@ -1,0 +1,54 @@
+<br/><br/>
+
+<div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">WHAT WE OFFER</span>
+  </div>
+
+  <!-- Charity Component -->
+  <div class="slider" x-data="{start: true, end: false}">
+    <div class="slider__content" x-ref="slider">
+      <div class="slider__item">
+        <a routerLink="/charity">
+        <img class="slider__image" src="../assets/Photoes/Charity/Charity.webp"/>
+      </a>
+        <div class="slider__info">
+          <h2 style="font-weight: 400;">Charity</h2>
+          <router-outlet/>
+        </div>
+      </div>
+
+      <!-- Campaign Component -->
+      <div class="slider__item">
+        <a routerLink="/campaign">
+        <img class="slider__image" src="assets/Photoes/Campaign/a.jpg"/>
+      </a>
+        <div class="slider__info">
+          <h2 style="font-weight: 400;">Campaign</h2>
+          <router-outlet/>
+        </div>
+      </div>
+
+      <!-- Healthcare Component -->
+      <div class="slider__item">
+        <a routerLink="/healthcare">
+        <img class="slider__image" src="assets/Photoes/Healthcare/Health-Care.jpg"/>
+      </a>
+        <div class="slider__info">
+          <h2 style="font-weight: 400;">Health Care</h2>
+          <router-outlet/>
+        </div>
+      </div>
+
+      <!-- Domestichelp Component -->
+      <div class="slider__item">
+        <a routerLink="/domestichelp">
+        <img class="slider__image" src="assets/Photoes/DomesticHelp/domestic-help.jpg"/>
+      </a>
+        <div class="slider__info">
+          <h2 style="font-weight: 400;">Domestic Help</h2>
+          <router-outlet/>
+        </div>
+      </div>
+
+  </div>
+</div>

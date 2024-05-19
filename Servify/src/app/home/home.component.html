@@ -1,0 +1,116 @@
+<div>
+    <img src="/assets/Carousel/donation.jpg">
+    <br><br><br><br><br>
+    <h2 style=" margin-left: 43%;"><u>OUR SERVICES</u></h2>
+</div>
+<br><br>
+<div class="projcard-container">
+        
+    <div class="projcard projcard-blue">
+        <div class="projcard-innerbox">
+            <iframe loop class="projcard-img" src="assets/Video/Charity.mp4"></iframe>
+            <div class="projcard-textbox">
+                <div class="projcard-title">Charity</div>
+                <div class="projcard-subtitle">Fueling Change, One Act of Kindness at a Time: Where Service Meets Heart</div>
+                <div class="projcard-bar"></div>
+                <div class="projcard-description">"Transforming Lives Through Compassionate Service."
+                    "Empowering Communities with Every Act of Kindness."
+                    "Building a Brighter Future Through Dedicated Service."</div>
+                <div class="projcard-tagbox"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="video" class="projcard projcard-customcolor" style="--projcard-color: #F5AF41;" onmouseenter="playVideo()" onmouseleave="pauseVideo()">
+        <div class="projcard-innerbox">
+            <iframe class="projcard-img" src="assets/Video/Campaign.mp4"></iframe>
+            <div class="projcard-textbox">
+                <div class="projcard-title">Campaign</div>
+                <div class="projcard-subtitle">Igniting change through collective action and shared vision</div>
+                <div class="projcard-bar"></div>
+                <div class="projcard-description">"Elevating Voices, Igniting Change: Join Our Campaign for a Better Tomorrow."<br/>
+                    "Driving Impact Through Advocacy and Action: Be Part of Our Campaign."</div>
+                <div class="projcard-tagbox"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projcard projcard-green" onmouseenter="playVideo()" onmouseleave="pauseVideo()">
+        <div class="projcard-innerbox">
+            <iframe class="projcard-img" src="assets/Video/Healthcare.mp4"></iframe>
+            <div class="projcard-textbox">
+                <div class="projcard-title">HealthCare</div>
+                <div class="projcard-subtitle">Where compassion meets expertise for healthier lives</div>
+                <div class="projcard-bar"></div>
+                <div class="projcard-description">"Your Health, Our Priority: Compassionate Care, Every Step of the Way."<br/>
+                    "Empowering Wellness Through Expertise and Compassion."<br/>
+                    "Comprehensive Healthcare Solutions, Tailored to Your Needs.</div>
+                <div class="projcard-tagbox"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projcard projcard-red">
+        <div class="projcard-innerbox">
+            <iframe class="projcard-img" src="assets/Video/DomesticHelp.mp4"></iframe>
+            <div class="projcard-textbox">
+                <div class="projcard-title">Domestic Help</div>
+                <div class="projcard-subtitle">Bringing peace to your home, one helping hand at a time</div>
+                <div class="projcard-bar"></div>
+                <div class="projcard-description">"Reliable Support for Your Home, Your Peace of Mind."<br/>
+                    "Trusted Hands, Making Home Life Easier."<br/>
+                    "Bringing Comfort and Care to Your Doorstep."</div>
+                <div class="projcard-tagbox"></div>
+            </div>
+        </div>
+    </div>   
+
+  </div>
+
+<script>
+    // Auto-play video on hovering 
+    var video = document.querySelector(".projcard-img");
+  
+    function playVideo() {
+      video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    }
+  
+    function pauseVideo() {
+      video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    }
+  </script>
+
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="home.component.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+<h2>SERVIFY</h2>
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Career</a></li>
+</ul>
+</div>
+
+<div class="row">
+Servify Copyright © 2024 <br>
+Servify - All rights reserved
+</div>
+</div>
+</footer>

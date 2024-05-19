@@ -1,0 +1,160 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Outfit';
+	background: linear-gradient(#ffdad5,#fff7f9);
+}
+.contact-container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.contact-left{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 20px;
+}
+.contact-left-title h2{
+	border: none;
+	width: 120px;
+	height: 5px;
+	background-color: #a363aa;
+	border-radius: 10px;
+	margin-bottom: 20px;
+
+}
+.contact-inputs{
+	width: 400px;
+	height: 50px;
+	border: none;
+	outline: none;
+	padding-left: 25px;
+	font-weight: 500;
+	color: #666;
+	border-radius: 50px;
+
+}
+.contact-left textarea{
+	height: 140px;
+	padding-top: 15px;
+	border-radius: 20px;
+}
+.contact-inputs:focus{
+	border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+	color: #a9a9a9;
+}
+.contact-left button{
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	font-size: 16px;
+	color: #fff;
+	gap: 10px;
+	border: none;
+	border-radius: 50px;
+	background: linear-gradient(270deg,#ff994f,#fa6d86);
+	cursor: pointer;
+}
+.contact-left button img{
+	height: 15px;
+}
+.contact-right img{
+	width: 500px;
+}
+@media(max-width:800px){
+	.contact-inputs{
+		width: 80vw;
+	}
+	.contact-right{
+		display: none;
+	}
+}
+/* feed.component.css */
+
+/* Styles for the container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the left side of the contact form */
+.contact-left {
+    width: 50%;
+}
+
+/* Styles for the contact form */
+.contact-left form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Styles for the input fields */
+.contact-inputs {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles for the submit button */
+.contact-left button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-left button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the right side of the contact form */
+.contact-right {
+    width: 50%;
+}
+
+/* Styles for the right side image */
+.contact-right img {
+    width: 100%;
+    height: auto;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url('path/to/your/image.jpg'); Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-color: #ddf2fa; /* Fallback color */
+	padding-left: 100px;
+}
+/* feed.component.css */
+
+/* Styles for the video */
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+/* Styles for the container */
+

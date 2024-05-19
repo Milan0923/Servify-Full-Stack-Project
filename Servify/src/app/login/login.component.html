@@ -1,0 +1,23 @@
+<form #loginform="ngForm" (ngSubmit)="validateuser(loginform)">
+  <br><br><br><br><br><br>
+  <div class='bold-line'></div>
+  <div class='container'>
+    <div class='window'>
+      <div class='overlay'></div>
+      <div class='content'>
+        <div class='welcome'>Servify Login!</div>
+        <div class='subtitle'>Helping, Hands Instantly</div>
+        <br>
+        <div class='input-fields'>
+          <input type='email' placeholder='Email' class='input-line full-width' name="email" ngModel><br><br>
+          <input type='password' placeholder='Password' class='input-line full-width' name="password" ngModel>
+        </div>
+        <br><br>
+        <div><button class='ghost-round full-width' type="submit">Login</button></div>
+        <div class='spacing'>Not registered? <a routerLink="/register"><span class='highlight'>Create an Account</span></a></div>
+      </div>
+    </div>
+  </div>
+  <router-outlet/>
+  <br><br>
+</form>

@@ -1,0 +1,48 @@
+
+<header>
+<nav style="background-color:honeydew;">
+  <div class="logo" style="display: flex;align-items: center;">
+   <span style="color:#007979; font-size:26px; font-weight:bold; letter-spacing: 1px;margin-left: 20px;">SERVIFY</span>
+  </div>
+  <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+  <ul class="nav-links">
+      <li><button class="login-button"><a routerLink="home">Home</a></button></li>
+      <li><button class="login-button"><a routerLink="what-we-offer">Services</a></button></li>
+      <li><button class="login-button"><a routerLink="contactus">Contact Us</a></button></li>
+      <li><button class="login-button"><a routerLink="members">Members</a></button></li>
+      <li><button class="login-button" routerLink="login" *ngIf="!islogin">LogIn</button></li>
+      <li><button class="login-button" routerLink="sign-out" *ngIf="islogin">{{currentuser}}</button></li>
+  </ul>
+</nav>
+
+<script>
+const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links li");
+  
+  hamburger.addEventListener('click', ()=>{
+     //Animate Links
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
+          link.classList.toggle("fade");
+      });
+  
+      //Hamburger Animation
+      hamburger.classList.toggle("toggle");
+  });
+  </script>
+</header>
+<body style="background-color:#aee6eb;">
+
+ <!-- <app-home></app-home>
+ <app-what-we-offer></app-what-we-offer>
+ <app-members></app-members>
+ <app-contactus> </app-contactus> -->
+ 
+<router-outlet/>
+ <footer></footer>
+</body>

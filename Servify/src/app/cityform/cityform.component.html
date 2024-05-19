@@ -1,0 +1,27 @@
+<form #cityForm="ngForm" (ngSubmit)="submitForm(cityForm)">
+  <br><br><br><br><br><br>
+  <div class='bold-line'></div>
+  <div class='container'>
+    <div class='window'>
+      <div class='overlay'></div>
+      <div class='content'>
+        <div class='welcome'>Servify!</div>
+        <div class='subtitle'>Helping, Hands Instantly</div>
+        <div class='input-fields'>
+          <label class='welcome' for="city">Select City:</label>
+        </div><br><br><br><br><br>
+        <div class="box">
+          <select name="city"  required ngModel>
+            <option  value="" disabled selected>Cities</option>
+            <option value="Pune">Pune</option>
+            <option value="Bangalore">Bangalore</option>
+          </select>
+        </div>
+        <br><br><br>
+        <div><button class='ghost-round full-width' type="submit">Submit</button></div>
+      </div>
+    </div>
+  </div>
+  <router-outlet/>
+  <br><br>
+</form>

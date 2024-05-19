@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="app" *ngFor="let e of earr" style="margin-top:300px">
+  <header>
+    <a id="img" href="">
+      <img src="/assets/image/download.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"/>
+    </a>
+  </header>
+  <nav>
+    <!-- <a href="#" aria-current="page"></a>
+    <a href="#"></a>
+    <a href="#"></a> -->
+  </nav>
+  <main>
+    <!-- <h1><span><p>{{carr.ngoName}}</p></span> -->
+
+<h2>{{e.ngoName}}</h2>
+<div class="star-rating">
+  <!-- <i class="bi bi-star"></i> -->
+  <span class="fa fa-star checked" id="i1"></span>
+  <span class="fa fa-star checked" id="i2"></span>
+  <span class="fa fa-star checked" id="i3"></span>
+  <span class="fa fa-star checked" id="i4"></span>
+  <span class="fa fa-star"></span>
+</div>
+<h3>{{e.cityName}}</h3>
+<h3>{{e.contactNumber}}</h3>
+
+    <p>What is the main purpose of an NGO?
+      A non-governmental organization, or NGO, typically is established to work toward public or social welfare goals. For instance, an NGO could focus on human rights, voters' rights, healthcare, helping the poor, and preventing cruelty to animals. NGOs can be funded by donations and grants.</p>
+    <a [href]="myArray[e.ngoId-1]">KNOW MORE</a>
+  </main>
+</div>
